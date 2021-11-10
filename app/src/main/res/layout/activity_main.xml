@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSolution"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:gravity="end"
+        android:text="@string/TvSolution"
+        android:textSize="@dimen/tvSolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btClear"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btClear"
+        app:layout_constraintBottom_toTopOf="@+id/bt7"
+        app:layout_constraintEnd_toStartOf="@+id/btPercent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSolution"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btPercent"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btPercent"
+        app:layout_constraintBottom_toTopOf="@+id/bt9"
+        app:layout_constraintEnd_toStartOf="@+id/btDivision"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/btClear"
+        app:layout_constraintTop_toBottomOf="@+id/tvSolution"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btDivision"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btDivision"
+        app:layout_constraintBottom_toTopOf="@+id/btMultiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/btPercent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSolution"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt7"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/bt7"
+        app:layout_constraintBottom_toTopOf="@+id/bt4"
+        app:layout_constraintEnd_toStartOf="@+id/bt8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+    <Button
+        android:id="@+id/bt8"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/tranparent"
+        android:text="@string/bt8"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/bt5"
+        app:layout_constraintEnd_toStartOf="@+id/bt9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt7"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+    <Button
+        android:id="@+id/bt9"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/tranparent"
+        android:text="@string/bt9"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/bt6"
+        app:layout_constraintEnd_toStartOf="@+id/btMultiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt8"
+        app:layout_constraintTop_toBottomOf="@+id/btPercent" />
+
+    <Button
+        android:id="@+id/btMultiply"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btMultiply"
+        app:layout_constraintBottom_toTopOf="@+id/btSubtract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt9"
+        app:layout_constraintTop_toBottomOf="@+id/btDivision"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt4"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt4"
+        app:layout_constraintBottom_toTopOf="@+id/bt1"
+        app:layout_constraintEnd_toStartOf="@+id/bt5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt7" />
+
+    <Button
+        android:id="@+id/bt5"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt5"
+        app:layout_constraintBottom_toTopOf="@+id/bt2"
+        app:layout_constraintEnd_toStartOf="@+id/bt6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt4"
+        app:layout_constraintTop_toBottomOf="@+id/bt8" />
+
+    <Button
+        android:id="@+id/btSubtract"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btSubtract"
+        app:layout_constraintBottom_toTopOf="@+id/btEquals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt6"
+        app:layout_constraintTop_toBottomOf="@+id/btMultiply"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt6"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt6"
+        app:layout_constraintBottom_toTopOf="@+id/bt3"
+        app:layout_constraintEnd_toStartOf="@+id/btSubtract"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt5"
+        app:layout_constraintTop_toBottomOf="@+id/bt9" />
+
+    <Button
+        android:id="@+id/bt1"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt1"
+        app:layout_constraintBottom_toTopOf="@+id/bt0"
+        app:layout_constraintEnd_toStartOf="@+id/bt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt4" />
+
+    <Button
+        android:id="@+id/bt2"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt2"
+        app:layout_constraintBottom_toTopOf="@+id/bt00"
+        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/bt5" />
+
+    <Button
+        android:id="@+id/btSum"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btSum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/btEquals"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt3"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt3"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/btEquals"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt2"
+        app:layout_constraintTop_toBottomOf="@+id/bt6" />
+
+    <Button
+        android:id="@+id/bt0"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt00"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/bt00"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/bt00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt0"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+
+    <Button
+        android:id="@+id/btEquals"
+        style="@style/calcuButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btEquals"
+        app:layout_constraintBottom_toTopOf="@+id/btSum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt3"
+        app:layout_constraintTop_toBottomOf="@+id/btSubtract"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button12"
+        style="@style/calcuButtonsNumbers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/btDot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btSum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt00"
+        app:layout_constraintTop_toBottomOf="@+id/bt3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

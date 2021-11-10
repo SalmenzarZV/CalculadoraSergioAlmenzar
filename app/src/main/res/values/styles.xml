@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="calcuButtons" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/operator_buttons_blue</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="backgroundTintMode">multiply</item>
+        <item name="android:hapticFeedbackEnabled">false</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@dimen/corner_size</item>
+    </style>
+
+    <style name="calcuButtonsNumbers" parent="calcuButtons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/tranparent</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="calcuButtonsRed" parent="calcuButtons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/operator_buttons_red</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+</resources>
